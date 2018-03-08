@@ -74,7 +74,7 @@ def check():
 
 if __name__ == '__main__':
 	check()
-        schedule.every(3).hour.do(check)
+        schedule.every(3).hours.do(check)
         while True:
                 schedule.run_pending()
                 time.sleep(1)
